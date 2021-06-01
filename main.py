@@ -10,7 +10,7 @@ from flask import Flask, request
 import os,json
 
 app = Flask(__name__)
-path = "Capstone_Chatbot_Model.h5"
+path = "./Version 1"
 model = keras.models.load_model(path)
 
 # Loading Json file
