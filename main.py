@@ -10,7 +10,7 @@ from flask import Flask, request
 import os,json
 
 app = Flask(__name__)
-path = "./Version 1"
+path = "./version_2"
 model = keras.models.load_model(path)
 
 # Loading Json file
