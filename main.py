@@ -28,7 +28,7 @@ def open_json(file_name):
 
 
 # Called 1st
-
+@app.route('/', methods=["GET"])
 def pred_class(text, vocab, labels):
     # Call bag_of_words
     bow = bag_of_words(text, vocab)
