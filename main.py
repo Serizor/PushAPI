@@ -84,7 +84,7 @@ def predict(message):
     result = get_response(intents, data)
     return result
 
-@app.route('/api/predict/test', methods=['GET'])
+@app.route('/api/predict/test', methods=['POST'])
 def chat():
     print("Start talking with the chatbot (try quit to stop)")
 
