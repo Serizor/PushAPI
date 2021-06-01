@@ -86,7 +86,7 @@ def predict(message):
 
 @app.route('/api/predict/test', methods=['POST'])
 def chat():
-    print("Start talking with the chatbot (try quit to stop)")
+    #print("Start talking with the chatbot (try quit to stop)")
 
     while True:
         message = input("").lower()
