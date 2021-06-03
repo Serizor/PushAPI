@@ -85,8 +85,13 @@ def predict(message):
     return result
 
 @app.route('/api/predict/test', methods=['POST', 'GET'])
+def chatBot():
+
+    chatInput = request.form['chatInput']
+    return jsonify(chatBotReply=predict(chatInput))
+
 def chat():
-    #print("Start talking with the chatbot (try quit to stop)")
+    print("Start talking with the chatbot (try quit to stop)")
 
     while True:
         message = input("").lower()
